@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import * as bootstrap from 'bootstrap';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NgOptimizedImage],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'codecv';
+
+  ngAfterViewInit() {
+    const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#navbar-example3',
+      offset: 0,
+      smoothScroll: true
+    });
+  }
 }
