@@ -1,5 +1,4 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import * as bootstrap from 'bootstrap';
 import {NgOptimizedImage} from '@angular/common';
 
