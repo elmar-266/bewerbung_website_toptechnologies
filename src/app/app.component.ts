@@ -1,10 +1,10 @@
 import { Component, AfterViewInit } from '@angular/core';
 import * as bootstrap from 'bootstrap';
-import {NgOptimizedImage} from '@angular/common';
+import {NgForOf, NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [ NgOptimizedImage ],
+  imports: [NgOptimizedImage, NgForOf],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

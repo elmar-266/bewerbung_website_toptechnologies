@@ -14,6 +14,10 @@
           <i class="bi bi-file-earmark-check-fill fs-3"></i>
           Abschlüsse
         </a>
+        <a class="nav-link" href="#item-4">
+          <i class="bi bi-list fs-3"></i>
+          Bewerbungsliste
+        </a>
       </nav>
     </nav>
   </div>
@@ -181,6 +185,29 @@
             </div>
           </div>
         </div>
+      </div>
+      <div id="item-4">
+        <div class="card mb-3" style="max-height: 600px; overflow-y: auto;">
+        <div class="card-body">
+          <h4 class="text-center">Bewerbungsliste</h4>
+          <div class="container-md">
+            <table class="table mb-0">
+              <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Firmenname</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let firma of firmenNamen; let i = index">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ firma }}</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </div>
