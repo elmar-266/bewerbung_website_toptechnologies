@@ -1,5 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
 
-/* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+.container-md {
+  .row {
+    .col-3 {
+      .card {
+        width: 18rem;
+        height: 400px;
+        margin-bottom: 2rem;
+
+        .card-img-top {
+          height: 250px;
+          object-fit: cover;
+        }
+
+        .card-body {
+          height: 150px;
+          overflow-y: auto;
+        }
+      }
+    }
+  }
+}
+
+.carousel {
+  margin-top: 3rem;
+
+  .carousel-item {
+    img {
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+}
